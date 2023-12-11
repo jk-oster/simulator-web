@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galactic Gravity Simulation</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    canvas {
+      display: block;
+      border: 1px solid #000;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <canvas id="canvas" width="800" height="600"></canvas>
+  <div>
+      <button id="start">Start</button>
+      <button id="pause">Pause</button>
+      <button id="reset">Reset</button>
+        <label for="cycle-time">Speed</label>
+        <input id="cycle-time" type="number" value="1" step="10" />
+        <label for="zoom-factor">Zoom</label>
+        <input id="zoom-factor" type="number" value="1" step="0.1" min="0.0001" />
+        <label for="initial-matter-amount">Matter</label>
+        <input id="initial-matter-amount" type="number" value="30" step="1" />
+        <label for="initial-matter-radius">Softening</label>
+        <input id="softening-factor" type="number" value="10" step="1" />
+        <label for="drag-factor">Drag</label>
+        <input id="drag-factor" type="number" value="0" step="0.01" />
+        <label for="gravitational-constant">Gravity</label>
+        <input id="gravitational-constant" type="number" value="1" step="1" min="0" />
+        <label for="merge-ratio-threshold">Merge</label>
+        <input id="merge-ratio-threshold" type="number" value="3" step="1" min="0" />
+        <label for="impact-speed-threshold">Impact</label>
+        <input id="impact-speed-threshold" type="number" value="0.3" step="0.1" min="0" />
+        
+  </div>
+  <script type="module" src="./main.js"></script>
+</body>
+
+</html>

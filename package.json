@@ -1,0 +1,20 @@
+{
+  "name": "simulator-web",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "http-server": "http-server -p 8080"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "noisejs": "^2.1.0"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
